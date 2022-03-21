@@ -1,0 +1,280 @@
+/* =======================
+    NAVBAR SECTION
+==========================*/
+
+.navbar-custom {
+    background-color:rebeccapurple;
+}
+
+.nav-link.active {
+    font-size: 17px;
+    color: white;
+    font-weight: 400;
+}
+
+.nav-item {
+    margin-left: 5%;
+}
+
+.navbar-brand, .nav-link {
+    color: antiquewhite !important;
+}
+
+.search-btn {
+    border-color: antiquewhite;
+    color: antiquewhite;
+}
+
+.search-btn:hover {
+    background-color: orangered;
+    color: antiquewhite;
+    border-color: orangered;
+}
+
+/* =======================
+     HOME SECTION
+==========================*/
+
+.welcome-showcase {
+    width: 100%;
+    padding: 7rem 0 3rem;
+    background-color: rgba(128,0,128,0.5);
+    background: url("..\\assets\\images\\home-sf-1.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.welcome-tagline {
+    padding: 9rem 1rem;
+    background-color: rgba(128,0,128,0.4);
+}
+
+.plan {
+    font-weight: 700;
+    text-align: center;
+    font-size: 58px;
+    color: antiquewhite;
+}
+
+.offer {
+    color:antiquewhite;
+    font-weight: 100;
+    font-size: 30px;
+    text-align: center;
+}
+
+.btn-holidays {
+    background-color: orangered;
+    color: white;
+    width: 200px;
+    margin-top: 2%;
+}
+
+.btn-holidays:hover {
+    transform: scale(1.15, 1.15);
+    transition-duration: 200ms;
+    background-color: rebeccapurple;
+    color: white;
+}
+
+.btn-holidays:active {
+    background-color: purple;
+}
+
+.search-area {
+    background-color: rgb(255, 240, 245);
+    border-radius: 14px;
+    padding: 4rem 20px;
+}
+
+.next {
+    padding-top: 1px;
+    font-weight: 500;
+    font-size: 38px;
+    text-align: center;
+}
+
+.submit-btn {
+    background-color: purple; 
+    color: antiquewhite;
+}
+
+.submit-btn:hover {
+    transform: scale(1.15, 1.15);
+    transition-duration: 200ms;
+    background-color: orangered;
+    border-color: orangered;
+    color: white;
+}
+
+.submit-btn:active {
+    background-color: orangered;
+}
+
+
+/* =======================
+    TOP PACKAGES SECTION
+==========================*/
+
+.travel-page {
+    padding: 1rem 0 3rem;   
+    width: 100%;
+    background-color: rgba(221,160,221,0.5);
+}
+
+hr {
+    width: 20%;
+}
+
+.packages {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 100px;
+    font-weight:600;
+}
+
+.card-img-top {
+    width: 100%;
+    max-height: 200px;
+    min-height: 190px;
+    object-fit: cover;
+}
+
+.card-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* ===========================
+    FLIGHTS BOOKING SECTION
+==============================*/
+
+#flight-booking {
+    padding: 2rem 0 2rem;
+    background-color: rgba(221,160,221,0.5);
+}
+
+.flight {
+    font-size: 50px;
+    text-align:center;
+    font-weight:600;
+}
+
+#loaning {
+    padding: 2rem 0 1rem;
+    margin-bottom: 50px;
+}
+
+.loans-btn {
+    color:antiquewhite;
+    background-color: purple;
+    border-radius: 20px;
+    width:100%;
+}
+
+.loans-btn:hover {
+    transform: scale(1.15, 1.15);
+    transition-duration: 200ms;
+    color: white;
+    background-color: orangered;
+}
+
+#flights-check {
+    padding: 1rem 2rem;
+    width: 90%;
+    background-color: whitesmoke;
+}
+
+
+.flights-name-images {
+    height: 8vh;
+    border-radius: 50%;
+    width: 60px;
+}   
+
+.flights-name {
+    font-size: 20px;
+}
+
+.flight-route {
+    font-size: 12px;
+}
+
+
+/* ==================
+    further section
+=======================*/
+.flight-showcase{
+    width: 100%;
+    padding: 5rem 0 4rem;
+    background-color: rgba(221,160,221,0.5);
+}
+
+.airport-code {
+    font-size:27px;
+    font-weight:700;
+}
+
+.city-name {
+    font-size:20px;
+}
+
+.prize {
+    font-size:22px;
+    text-align: center;
+}
+
+#card-color{
+    background-color: whitesmoke;
+    border-radius:22px;
+}
+
+span{
+    color: red;
+}
+
+.flight-search-area {
+    background-color: rgb(255, 240, 245);
+    border-radius: 14px;
+    padding: 2rem 20px;
+}
+
+.next {
+    padding-top: 1px;
+    font-weight: 500;
+    font-size: 38px;
+    text-align: center;
+}
+
+.submit-btn {
+    background-color: purple; 
+    color: antiquewhite;
+}
+
+.submit-btn:hover {
+    transform: scale(1.15, 1.15);
+    transition-duration: 200ms;
+    background-color: orangered;
+    border-color: orangered;
+    color: white;
+}
+
+.submit-btn:active {
+    background-color: orangered;
+}
+
+/* =======================
+    HOTEL SECTION
+==========================*/
+
+#hotel {
+    padding: 2rem 0 5rem;
+    background-color: rgba(221,160,221,0.5) ;
+}
+
+.hotels-book {
+    font-size: 50px;
+    text-align:center;
+    font-weight:600;
+}

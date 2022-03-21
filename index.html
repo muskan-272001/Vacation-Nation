@@ -1,0 +1,886 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel='stylesheet' href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!--
+      ===========================
+               NAVBAR
+      ========================== -->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Travel Easy</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#travel-page">Holidays</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#hotel">Hotels</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Flights</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn search-btn" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--
+      ===========================
+               SECTION:-HOME
+      ========================== -->
+     <section id="home">
+       <div class="container-fluid px-0 welcome-showcase">
+        <div class="container">
+          <div class="row h-100 align-items-center">
+            <div class="col-lg-8 col-md-6 mb-5 mb-md-0">
+              <div class="container welcome-tagline">
+                <p class="plan">Plan your next trip with us!</p>
+                <p class="offer">Get a 10% off when you book your first holiday with us!</p>
+                <center><button type="button" class="btn btn-holidays">See Holidays</button></center>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="container search-area">
+                <form class="row h-100 align-items-center">
+                  <div class="col">
+                      <div class="col mb-3 d-flex justify-content-center">
+                          <h2 class="next">Where to next?</h2>
+                      </div>
+                      <div class="col mb-3">
+                          <label for="sourceLocation" class="form-label">Source</label>
+                          <input type="text" class="form-control" id="sourceLocation" placeholder="Source location">
+                      </div>
+                      <div class="col mb-3">
+                          <label for="destinationLocation" class="form-label">Destination</label>
+                          <input type="text" class="form-control" id="destinationLocation" placeholder="Destination location">
+                      </div>
+                      <div class="row">
+                          <div class="col-6 mb-3">
+                              <label for="startDate" class="form-label">Start date</label>
+                              <input type="date" class="form-control" id="startDate">
+                          </div>
+                          <div class="col-6 mb-3">
+                              <label for="endDate" class="form-label">End date</label>
+                              <input type="date" class="form-control" id="endDate">
+                          </div>
+                      </div>
+                      <div class="row align-items-end">
+                          <div class="col-6 mb-3">
+                              <label for="adultCount">Adults</label>
+                              <select class="form-select" id="adultCount">
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                              </select>
+                          </div>
+                          <div class="col-6 mb-3">
+                              <label for="childCount">Children (upto 8 years)</label>
+                              <select class="form-select" id="childCount">
+                                  <option>1</option>
+                                  <option>2</option>
+                                  <option>3</option>
+                                  <option>4</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="col-lg-12 mb-3 d-flex justify-content-center">
+                          <button type="submit" class="btn submit-btn">Search</button>
+                      </div>
+                  </div>
+              </form>
+              </div>
+            </div>
+          </div>
+       </div>
+     </section>
+
+
+     <!--
+      =====================================
+               SECTION:-TOP PACKAGES
+      ===================================== -->
+
+      <section id="travel-page">
+        <div class="container-fluid px-0 travel-page">
+            <div class="container">
+                <center>
+                  <p class="packages">TOP PACKAGES</p><hr>    
+                </center>
+                <div class="row align-items-center g-3">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <img src="assets/images/Taj-Mahal.jpg" class="card-img-top" alt="Taj Mahal">
+                            <div class="card-body">
+                            <h5 class="card-title">Taj Mahal</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-main">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <img src="assets/images/eiffel-tower.jpg" class="card-img-top" alt="Eiffel Tower">
+                            <div class="card-body">
+                            <h5 class="card-title">Eiffel Tower</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-main">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <img src="assets/images/leaning tower of pisa.jpg" class="card-img-top" alt="Leaning Tower of Pisa">
+                            <div class="card-body">
+                            <h5 class="card-title">Leaning Tower of Pisa</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-main">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="card h-100">
+                            <img src="assets/images/colosseum.jpg" class="card-img-top" alt="colosseum">
+                            <div class="card-body">
+                            <h5 class="card-title">Colosseum</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-main">Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--
+      ==================================
+               SECTION:-FLIGHTS BOOKING
+      ================================== -->
+    <section id="flight-booking">
+      <div class="container">
+        <p class="flight">BOOK YOUR FLIGHTS</p>
+        <center><hr></center>
+      </div>
+      <div class="container my-10" id="loaning">
+        <div class="row g-3">
+          <div class="col-12 col-md-4 mb-sm-3">
+            <button type="button" class="btn loans-btn">
+              <div class="row px-4">
+                <div class="col-10">
+                  <h4>
+                    Credit Cards
+                  </h4>
+                </div>
+                <div class="col-2">
+                  <i class="fas fa-long-arrow-alt-right fa-2x"></i>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div class="col-12 col-md-4 mb-sm-3">
+            <button type="button" class="btn loans-btn">
+              <div class="row px-4">
+                <div class="col-10">
+                  <h4>
+                    Personal Loans
+                  </h4>
+                </div>
+                <div class="col-2">
+                  <i class="fas fa-long-arrow-alt-right fa-2x"></i>
+                </div>
+              </div>
+            </button>
+          </div>
+          <div class="col-12 col-md-4 mb-sm-3">
+            <button type="button" class="btn loans-btn">
+              <div class="row px-4">
+                <div class="col-10">
+                  <h4>
+                    Travel Loans
+                  </h4>
+                </div>
+                <div class="col-2">
+                  <i class="fas fa-long-arrow-alt-right fa-2x"></i>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+          
+      <div class="container" id="flights-check">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="row">
+              <div class="col-3">
+                <img src="assets/images/chennai.jpg" class="flights-name-images" alt="Chennai">
+              </div>
+              <div class="col-9">
+                <b><p class="flights-name">Chennai Flights</p></b>
+                <p class="flight-route">Via-<b>Delhi,Mumbai,Coimbatore,Madurai</b></p>
+              </div>
+            </div>
+          </div>
+          
+        <div class="col-lg-4">
+          <div class="row">
+            <div class="col-3">
+              <img src="assets/images/goa.jpg" class="flights-name-images" alt="Goa">
+            </div>
+            <div class="col-9">
+              <b><p class="flights-name">Goa Flights</p></b>
+              <p class="flight-route">Via-<b>Delhi,Mumbai,Bangalore,Ahmedabad</b></p>
+            </div>
+          </div>
+        </div>
+          
+        <div class="col-lg-4">
+          <div class="row">
+            <div class="col-3">
+              <img src="assets/images/mumbai.jpg" class="flights-name-images" alt="Mumbai">
+            </div>
+            <div class="col-9">
+              <b><p class="flights-name">Mumbai Flights</p></b>
+              <p class="flight-route">Via-<b>Delhi,Bangalore,Chennai,Ahmedabad</b></p>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+      <div class="row" id="flights">
+        <div class="col-lg-4">
+          <div class="row">
+            <div class="col-3">
+              <img src="assets/images/hyderabad.jpg" class="flights-name-images" alt="Hyderabad">
+            </div>
+            <div class="col-9">
+            <b><p class="flights-name">Hyderabad Flights</p></b>
+              <p class="flight-route">Via-<b>Chennai,Mumbai,Bangalore,Delhi</b></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4">
+          <div class="row">
+            <div class="col-3">
+              <img src="assets/images/delhi.jpg" class="flights-name-images" alt="Delhi">
+            </div>
+            <div class="col-9">
+            <b><p class="flights-name">Delhi Flights</p></b>
+              <p class="flight-route">Via-<b>Mumbai,Pune,Bangalore,Chennai</b></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4">
+          <div class="row">
+            <div class="col-3">
+              <img src="assets/images/pune.jpg" class="flights-name-images" alt="pune">
+            </div>
+            <div class="col-9">
+            <b><p class="flights-name">Pune Flights</p></b>
+              <p class="flight-route">Via-<b>Delhi,Bangalore,Chennai,Ahmedabad</b></p>
+            </div>
+          </div>
+          </div>
+        </div>
+        
+      <div class="row" id="flights">
+        <div class="col-lg-4">
+          <div class="row">
+            <div class="col-3">
+              <img src="assets/images/kolkata.jpg" class="flights-name-images" alt="kolkata">
+            </div>
+            <div class="col-9">
+            <b><p class="flights-name">Kolkata Flights</p></b>
+              <p class="flight-route">Via-<b>Delhi,Mumbai,Bangalore,Pune</b></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4">
+          <div class="row">
+            <div class="col-3">
+              <img src="assets/images/bangalore.jpg" class="flights-name-images" alt="bangalore">
+            </div>
+            <div class="col-9">
+            <b><p class="flights-name">Bangalore Flights</p></b>
+              <p class="flight-route">Via-<b>Delhi,Pune,Mumbai,Kolkata</b></p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4">
+          <div class="row">
+            <div class="col-3">
+              <img src="assets/images/jaipur.jpg" class="flights-name-images" alt="jaipur">
+            </div>
+            <div class="col-9">
+            <b><p class="flights-name">Jaipur Flights</p></b>
+              <p class="flight-route">Via-<b>Mumbai,Delhi,Pune,Bangalore</b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+
+
+    <!--
+      ============================
+            SECTION:-FLIGHTS
+      ============================
+    -->
+
+
+    <section id="airflight">
+      <div class="container-fluid px-0 flight-showcase">
+       <div class="container">
+         <div class="row h-100 align-items-center">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <div class="card" id="card-color">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-4">
+                              <p class="airport-code">BOM</p>
+                              <div class="row">
+                                <div class="col">
+                                  <p class="city-name">Mumbai</p>
+                                </div>
+                              </div>
+                            </div>
+                              <div class="col-4">
+                                <i class="fas fa-plane fa-3x"></i>
+                              </div>
+                              <div class="col-4">
+                                <p class="airport-code">DEL</p>
+                                <div class="col">
+                                  <p class="city-name">Delhi</p>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <p class="prize">Starting at <b><span>&#x20B9;7999</span></b> only</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card" id="card-color">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-4">
+                              <p class="airport-code">BOM</p>
+                              <div class="row">
+                                <div class="col">
+                                  <p class="city-name">Mumbai</p>
+                                </div>
+                              </div>
+                            </div>
+                              <div class="col-4">
+                                <i class="fas fa-plane fa-3x"></i>
+                              </div>
+                              <div class="col-4">
+                                <p class="airport-code">SYD</p>
+                                <div class="col">
+                                  <p class="city-name">Sydney</p>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <p class="prize">Starting at <b><span>&#x20B9;79999</span></b> only</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card" id="card-color">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-4">
+                              <p class="airport-code">BLR</p>
+                              <div class="row">
+                                <div class="col">
+                                  <p class="city-name">Bengaluru</p>
+                                </div>
+                              </div>
+                            </div>
+                              <div class="col-4">
+                                <i class="fas fa-plane fa-3x"></i>
+                              </div>
+                              <div class="col-4">
+                                <p class="airport-code">DXB</p>
+                                <div class="col">
+                                  <p class="city-name">Dubai</p>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <p class="prize">Starting at <b><span>&#x20B9;33000</span></b> only</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card" id="card-color">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-4">
+                              <p class="airport-code">BOM</p>
+                              <div class="row">
+                                <div class="col">
+                                  <p class="city-name">Mumbai</p>
+                                </div>
+                              </div>
+                            </div>
+                              <div class="col-4">
+                                <i class="fas fa-plane fa-3x"></i>
+                              </div>
+                              <div class="col-4">
+                                <p class="airport-code">LHR</p>
+                                <div class="col">
+                                  <p class="city-name">London</p>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <p class="prize">Starting at <b><span>&#x20B9;68600</span></b> only</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card" id="card-color">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-4">
+                              <p class="airport-code">HYD</p>
+                              <div class="row">
+                                <div class="col">
+                                  <p class="city-name">Hyderabad</p>
+                                </div>
+                              </div>
+                            </div>
+                              <div class="col-4">
+                                <i class="fas fa-plane fa-3x"></i>
+                              </div>
+                              <div class="col-4">
+                                <p class="airport-code">IXC</p>
+                                <div class="col">
+                                  <p class="city-name">Chandigarh</p>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <p class="prize">Starting at <b><span>&#x20B9;10999</span></b> only</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card" id="card-color">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-4">
+                              <p class="airport-code">BLR</p>
+                              <div class="row">
+                                <div class="col">
+                                  <p class="city-name">Bengaluru</p>
+                                </div>
+                              </div>
+                            </div>
+                              <div class="col-4">
+                                <i class="fas fa-plane fa-3x"></i>
+                              </div>
+                              <div class="col-4">
+                                <p class="airport-code">HYD</p>
+                                <div class="col">
+                                  <p class="city-name">Hyderabad</p>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <p class="prize">Starting at <b><span>&#x20B9;9599</span></b> only</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                  <div class="container flight-search-area">
+                    <form class="row h-100 align-items-center">
+                      <div class="col">
+                          <div class="col mb-3 d-flex justify-content-center">
+                              <h2 class="next">Fly Easy</h2>
+                          </div>
+                          <div class="row align-items-end">
+                            <div class="col-6 mb-3">
+                              <input type="radio" id="html" name="fav_language" value="HTML">
+                              <label for="html">One way</label>
+                            </div>
+                            <div class="col-6 mb-3">
+                              <input type="radio" id="css" name="fav_language" value="CSS">
+                              <label for="css">Round trip</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col mb-3">
+                              <label for="sourceLocation" class="form-label">Source</label>
+                              <input type="text" class="form-control" id="sourceLocation" placeholder="Source location">
+                          </div>
+                            <div class="col mb-3">
+                              <label for="destinationLocation" class="form-label">Destination</label>
+                              <input type="text" class="form-control" id="destinationLocation" placeholder="Destination location">
+                            </div>
+                          </div>
+                          <div class="col mb-3">
+                            <label for="class" class="form-label">Class</label>
+                            <select class="form-select" id="travellerclass">
+                              <option>Economy</option>
+                              <option>2</option>
+                              <option>3</option>
+                              <option>4</option>
+                          </select>
+                          </div>
+                          <div class="row">
+                              <div class="col-6 mb-3">
+                                  <label for="startDate" class="form-label">Depart</label>
+                                  <input type="date" class="form-control" id="startDate">
+                              </div>
+                              <div class="col-6 mb-3">
+                                  <label for="endDate" class="form-label">Return</label>
+                                  <input type="date" class="form-control" id="endDate">
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-6 mb-3">
+                                  <label for="adultCount">Adults</label>
+                                  <select class="form-select" id="adultCount">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                  </select>
+                              </div>
+                              <div class="col-6 mb-3">
+                                  <label for="childCount">Children (upto 8 years)</label>
+                                  <select class="form-select" id="childCount">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                  </select>
+                              </div>
+                          </div>
+                          <div class="col-lg-12 mb-3 d-flex justify-content-center">
+                              <button type="submit" class="btn submit-btn">Search</button>
+                          </div>
+                      </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+         </div>
+        </div>
+    </section>
+
+    <!--
+      ===========================
+            SECTION:-HOTEL
+      ========================== -->
+    <section id="hotel">
+      <div class="container-fluid px-0 hotel">
+        <p class="hotels-book">HOTELS</p>
+        <center><hr></center>
+      </div>
+      <div class="container" id="hotel-container">
+        <div class="row align-items-center g-3">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100">
+              <img src="assets/images/hotel.jpg" class="card-img-top" alt="Hotel Image">
+              <div class="card-body">
+                <h5 class="card-title">Hotel One</h5>
+                <p class="card-text"><b>Location:</b> Agra, Uttar Pradesh, India
+                  <b>Architectural style:</b> Mughal architecture
+                  <b>State Party:</b> India
+                  <b>Built:</b> 1632–53</p>
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card h-100">
+              <img src="assets/images/hotel.jpg" class="card-img-top" alt="Hotel Image">
+              <div class="card-body">
+                <h5 class="card-title">Resort two</h5>
+                <p class="card-text"><b>Location:</b> Agra, Uttar Pradesh, India
+                  <b>Architectural style:</b> Mughal architecture
+                  <b>State Party:</b> India
+                  <b>Built:</b> 1632–53</p>
+                <a href="#" class="btn btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100">
+            <img src="assets/images/hotel.jpg" class="card-img-top" alt="Hotel Image">
+            <div class="card-body">
+              <h5 class="card-title">Hotel 3</h5>
+              <p class="card-text"><b>Location:</b> Agra, Uttar Pradesh, India
+                <b>Architectural style:</b> Mughal architecture
+                <b>State Party:</b> India
+                <b>Built:</b> 1632–53</p>
+              <a href="#" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card h-100">
+            <img src="assets/images/hotel.jpg" class="card-img-top" alt="Hotel Image">
+            <div class="card-body">
+              <h5 class="card-title">Hotel 3</h5>
+              <p class="card-text"><b>Location:</b> Agra, Uttar Pradesh, India
+                <b>Architectural style:</b> Mughal architecture
+                <b>State Party:</b> India
+                <b>Built:</b> 1632–53</p>
+              <a href="#" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+
+    <!-- Contact -->
+    <!--Section: Contact v.2-->
+  <section class="mb-4">
+
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+        a matter of hours to help you.</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>San Francisco, CA 94126, USA</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>+ 01 234 567 89</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>contact@mdbootstrap.com</p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+  </section>
+<!--Section: Contact v.2-->
+
+
+
+   <!-- footer -->
+    
+    <footer class="bg-black text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #3b5998;"
+            href="https://www.facebook.com/profile.php?id=100050911147273"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+    
+          <!-- Twitter -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #55acee;"
+            href="https://twitter.com/musk_27"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #ac2bac;"
+            href="https://www.instagram.com/musk_27/"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+    
+          <!-- Linkedin -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #0082ca;"
+            href="https://www.linkedin.com/in/muskan-pandey-2b42b6199/"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <!-- Github -->
+          <a
+            class="btn btn-primary btn-floating m-1"
+            style="background-color: #333333;"
+            href="https://github.com/muskan-272001"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: black;">
+        © 2020 Copyright:
+        <a class="text-white">MuskanPandey</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+
+    
+
+    
+
+    
+
+    
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
