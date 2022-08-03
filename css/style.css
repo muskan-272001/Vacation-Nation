@@ -278,3 +278,29 @@ span{
     text-align:center;
     font-weight:600;
 }
+
+/* =======================
+   CONTACT US SECTION
+==========================*/
+
+.block1 {
+    margin-bottom: 20px;
+    border: 1.5px solid purple;
+    border-radius: 6px;
+  }
+  
+.block2 {
+    margin-bottom: 20px;
+    border: 1.5px solid purple;
+    border-radius: 6px;
+  }
+ 
+.btn-primary {
+    color : white;
+    background-color: purple;
+}
+
+.btn-primary:hover {
+    color : white;
+    background-color: red;
+}
